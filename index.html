@@ -590,6 +590,27 @@
             gap: 10px;
             cursor: pointer;
         }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 80px;
+            left: 18px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.28);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            z-index: 19;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 16px 36px rgba(37, 211, 102, 0.38);
+        }
         @media (max-width: 768px) {
             .header-cta {
                 display: inline-flex;
@@ -628,7 +649,7 @@
                 </div>
                 <div class="header-actions">
                     <div class="contact-chip">טלפון: 054-228-2840</div>
-                    <button class="header-cta" onclick="location.href='#consultation'">ייעוץ חינם</button>
+                    <button class="header-cta" onclick="location.href='#consultation'">קבע ייעוץ</button>
                     <button class="lang-btn" onclick="window.location.href='en.html'">English</button>
                 </div>
             </div>
@@ -641,7 +662,7 @@
                 <div>
                     <h2>הגוף שלך נחנק בכל לילה.</h2>
                     <p>ואת אפילו לא יודע שזה קורה. מה אם אספר שיש פתרון פשוט, לא ניתוחי, שיכול להציל את חייך — והוא נכנס בפה?</p>
-                    <a href="#consultation" class="cta-button">קביעת ייעוץ חינם</a>
+                    <a href="#consultation" class="cta-button">קביעת ייעוץ</a>
                 </div>
                 <div class="hero-highlights">
                     <div class="highlight-card">
@@ -838,8 +859,8 @@
             <div class="process-grid">
                 <div class="process-step">
                     <span>שלב 1</span>
-                    <h4>ייעוץ והערכה חינם</h4>
-                    <p>הבא איתך בדיקות שינה או מסמכים רפואיים. ד"ר אטציון יבחן את נתיב האוויר, הסימפטומים והיעדים שלך כדי לאשר התאמה.</p>
+                    <h4>ייעוץ והערכה מקיפים (₪250)</h4>
+                    <p>הבא איתך בדיקות שינה או מסמכים רפואיים. ד"ר אטציון יערוך הערכה מקיפה של נתיב האוויר, הסימפטומים, ההיסטוריה הרפואית שלך והיעדים כדי לקבוע התאמה. הערכה מפורטת זו בדרך כלל אורכת 45-60 דקות.</p>
                 </div>
                 <div class="process-step">
                     <span>שלב 2</span>
@@ -868,7 +889,7 @@
         <div class="container">
             <div class="cta-block">
                 <h3>מוכן לחזור לישון בשקט?</h3>
-                <p>מלא את הטופס וקבע ייעוץ חינם. בתוך שבועות ספורים תוכל לישון עמוק, לנשום בחופשיות ולהתעורר מלא אנרגיה.</p>
+                <p>מלא את הטופס וקבע ייעוץ עם ד"ר אטציון (₪250). הערכה מקיפה זו כוללת ביקורת היסטוריה רפואית מלאה, הערכת נתיב אוויר ותוכנית טיפול מותאמת אישית. בתוך שבועות ספורים תוכל לישון עמוק, לנשום בחופשיות ולהתעורר מלא אנרגיה.</p>
                 <a href="tel:0542282840" class="cta-button">מעדיף לדבר? 054-228-2840</a>
             </div>
 
@@ -928,7 +949,7 @@
                     <label for="comments">הערות נוספות (לא חובה)</label>
                     <textarea id="comments" name="comments" placeholder="ספר לנו מה חשוב שנדע לפני הפגישה."></textarea>
                 </div>
-                <button type="submit" class="submit-btn">קבע ייעוץ חינם →</button>
+                <button type="submit" class="submit-btn">קבע ייעוץ (₪250) →</button>
                 <p style="margin-top: 18px; color: var(--muted); font-size: 0.9rem;">אנו מכבדים את פרטיותך. המידע נשאר חסוי לחלוטין.</p>
             </form>
 
@@ -975,7 +996,13 @@
         </div>
     </footer>
 
-    <button class="mobile-cta" onclick="location.href='#consultation'">קבע ייעוץ חינם</button>
+    <button class="mobile-cta" onclick="location.href='#consultation'">קבע ייעוץ</button>
+
+    <a href="https://wa.me/9720535455468" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="צור קשר דרך וואטסאפ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.647.791 5.127 2.288 7.19L3.771 21.01l7.638-2.006A9.908 9.908 0 0012.121 21c5.44 0 9.873-4.434 9.873-9.873 0-2.65-.791-5.13-2.288-7.193 1.497 2.063 2.288 4.543 2.288 7.193 0 5.44-4.434 9.873-9.873 9.873-2.647 0-5.127-.791-7.19-2.288l.005.001z" fill="currentColor"/>
+        </svg>
+    </a>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();

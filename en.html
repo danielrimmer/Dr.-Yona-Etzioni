@@ -552,6 +552,27 @@
             gap: 10px;
             cursor: pointer;
         }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 80px;
+            right: 18px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.28);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            z-index: 19;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 16px 36px rgba(37, 211, 102, 0.38);
+        }
         @media (max-width: 768px) {
             .header-cta {
                 display: inline-flex;
@@ -590,7 +611,7 @@
                 </div>
                 <div class="header-actions">
                     <div class="contact-chip">Call: 054-228-2840</div>
-                    <button class="header-cta" onclick="location.href='#consultation'">Free Consultation</button>
+                    <button class="header-cta" onclick="location.href='#consultation'">Schedule Consultation</button>
                     <button class="lang-btn" onclick="window.location.href='index.html'">עברית</button>
                 </div>
             </div>
@@ -603,7 +624,7 @@
                 <div>
                     <h2>Your Body Is Suffocating You Every Night.</h2>
                     <p>And You Don't Even Know It's Happening. What if I told you there's a simple, non-surgical solution that could save your life — and it fits in your mouth?</p>
-                    <a href="#consultation" class="cta-button">Schedule Your Free Consultation</a>
+                    <a href="#consultation" class="cta-button">Schedule Your Consultation</a>
                 </div>
                 <div class="hero-highlights">
                     <div class="highlight-card">
@@ -800,8 +821,8 @@
             <div class="process-grid">
                 <div class="process-step">
                     <span>Step 1</span>
-                    <h4>Free Consultation & Assessment</h4>
-                    <p>Bring any sleep study results or medical reports. Dr. Etzioni will evaluate your airway, symptoms, and goals to confirm candidacy.</p>
+                    <h4>Comprehensive Consultation & Assessment (₪250)</h4>
+                    <p>Bring any sleep study results or medical reports. Dr. Etzioni will conduct a thorough evaluation of your airway, symptoms, medical history, and goals to determine candidacy. This detailed assessment typically takes 45-60 minutes.</p>
                 </div>
                 <div class="process-step">
                     <span>Step 2</span>
@@ -830,7 +851,7 @@
         <div class="container">
             <div class="cta-block">
                 <h3>Ready to Sleep Peacefully Again?</h3>
-                <p>Complete the form below to schedule your free consultation. In a matter of weeks, you could be sleeping deeply, breathing freely, and waking up restored.</p>
+                <p>Complete the form below to schedule your comprehensive consultation with Dr. Etzioni (₪250). This in-depth assessment includes a complete medical history review, airway evaluation, and personalized treatment plan. In a matter of weeks, you could be sleeping deeply, breathing freely, and waking up restored.</p>
                 <a href="tel:0542282840" class="cta-button">Prefer to Call? 054-228-2840</a>
             </div>
 
@@ -890,7 +911,7 @@
                     <label for="comments">Additional Comments (Optional)</label>
                     <textarea id="comments" name="comments" placeholder="Share anything you think we should know before your consultation."></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Schedule My Free Consultation →</button>
+                <button type="submit" class="submit-btn">Schedule My Consultation (₪250) →</button>
                 <p style="margin-top: 18px; color: var(--muted); font-size: 0.9rem;">We respect your privacy. Your information is confidential and never shared.</p>
             </form>
 
@@ -937,7 +958,13 @@
         </div>
     </footer>
 
-    <button class="mobile-cta" onclick="location.href='#consultation'">Book Free Consultation</button>
+    <button class="mobile-cta" onclick="location.href='#consultation'">Book Consultation</button>
+
+    <a href="https://wa.me/9720535455468" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="Chat on WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.647.791 5.127 2.288 7.19L3.771 21.01l7.638-2.006A9.908 9.908 0 0012.121 21c5.44 0 9.873-4.434 9.873-9.873 0-2.65-.791-5.13-2.288-7.193 1.497 2.063 2.288 4.543 2.288 7.193 0 5.44-4.434 9.873-9.873 9.873-2.647 0-5.127-.791-7.19-2.288l.005.001z" fill="currentColor"/>
+        </svg>
+    </a>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
